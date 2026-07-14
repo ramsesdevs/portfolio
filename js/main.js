@@ -49,10 +49,24 @@ async function handleSubmit(e) {
   const form = e.target;
   const btn = form.querySelector('button[type="submit"]');
   const originalHTML = btn.innerHTML;
+  const successMsg = document.getElementById('contactSuccess');
+
+  let isValid = true;
+  form.querySelectorAll('.form-control').forEach(input => {
+    input.classList.remove('input-error', 'input-success');
+    if (!input.value.trim()) {
+      input.classList.add('input-error');
+      isValid = false;
+    } else {
+      input.classList.add('input-success');
+    }
+  });
+
+  if (!isValid) return;
 
   const formspreeUrl = 'https://formspree.io/f/mgogvlze';
 
-  btn.innerHTML = '<i data-lucide="loader" width="16" height="16"></i> Enviando...';
+  btn.innerHTML = '<i data-lucide="loader" width="16" height="16"></i> Sending...';
   btn.disabled = true;
   lucide.createIcons();
 
@@ -66,10 +80,12 @@ async function handleSubmit(e) {
     });
 
     if (response.ok) {
-      btn.innerHTML = '<i data-lucide="check" width="16" height="16"></i> ¡Enviado!';
+      btn.innerHTML = '<i data-lucide="check" width="16" height="16"></i> Sent!';
       btn.style.background = '#10B981';
+      successMsg.style.display = 'block';
       lucide.createIcons();
       form.reset();
+      form.querySelectorAll('.form-control').forEach(input => input.classList.remove('input-success'));
     } else {
       throw new Error('Network response was not ok.');
     }
@@ -77,16 +93,16 @@ async function handleSubmit(e) {
     btn.innerHTML = '<i data-lucide="x" width="16" height="16"></i> Error';
     btn.style.background = '#EF4444';
     lucide.createIcons();
-    console.error("Error al enviar el formulario:", error);
-    alert("Para que el formulario funcione, necesitas poner tu URL de Formspree en el archivo js/main.js");
+    console.error("Form error:", error);
   }
 
   setTimeout(() => {
     btn.innerHTML = originalHTML;
     btn.style.background = '';
     btn.disabled = false;
+    successMsg.style.display = 'none';
     lucide.createIcons();
-  }, 3000);
+  }, 4000);
 }
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {

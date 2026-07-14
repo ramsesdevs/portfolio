@@ -22,6 +22,12 @@
 
   html { scroll-behavior: smooth; }
 
+  *:focus-visible {
+    outline: 2px solid var(--secondary);
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+
   body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
     background: var(--bg);
@@ -210,7 +216,6 @@
     font-size: 13px;
     color: var(--secondary);
     margin-bottom: 28px;
-    animation: fadeInUp 0.8s ease;
   }
 
   .hero-badge::before {
@@ -228,7 +233,6 @@
     line-height: 1.05;
     letter-spacing: -2px;
     margin-bottom: 24px;
-    animation: fadeInUp 0.8s ease 0.1s backwards;
   }
 
   .hero h1 .gradient {
@@ -243,15 +247,55 @@
     color: var(--secondary);
     font-weight: 500;
     margin-bottom: 20px;
-    animation: fadeInUp 0.8s ease 0.2s backwards;
   }
 
   .hero-desc {
     font-size: 18px;
     color: var(--text-muted);
     max-width: 600px;
+    margin-bottom: 20px;
+  }
+
+  .hero-availability {
+    font-size: 15px;
+    color: var(--text-muted);
+    display: flex;
+    align-items: center;
+    gap: 10px;
     margin-bottom: 40px;
-    animation: fadeInUp 0.8s ease 0.3s backwards;
+  }
+
+  .pulse-dot {
+    width: 8px;
+    height: 8px;
+    background: #22c55e;
+    border-radius: 50%;
+    display: inline-block;
+    box-shadow: 0 0 0 rgba(34, 197, 94, 0.4);
+    animation: pulseGreen 2s infinite;
+  }
+
+  @keyframes pulseGreen {
+    0% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.4); }
+    70% { box-shadow: 0 0 0 10px rgba(34, 197, 94, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0); }
+  }
+
+  .hero-animate {
+    opacity: 0;
+    animation: heroEntrance 600ms cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+    animation-delay: var(--delay, 0s);
+  }
+
+  @keyframes heroEntrance {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 
   .hero-buttons {
@@ -613,6 +657,56 @@
     gap: 8px;
   }
 
+  /* TECH STACK */
+  .tech-stack-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .tech-icon-box {
+    width: 60px;
+    height: 60px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    transition: var(--transition);
+    position: relative;
+    cursor: pointer;
+  }
+
+  .tech-icon-box:hover {
+    border-color: var(--primary);
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(56, 189, 248, 0.4);
+  }
+
+  .tech-icon-box::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(15, 23, 42, 0.9);
+    color: #fff;
+    font-size: 12px;
+    padding: 4px 8px;
+    border-radius: 4px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    white-space: nowrap;
+  }
+
+  .tech-icon-box:hover::after {
+    opacity: 1;
+  }
+
   /* SKILLS */
   .skills-grid {
     display: grid;
@@ -719,7 +813,7 @@
     transition: transform 0.6s ease;
   }
 
-  .project-card:hover .project-image img { transform: scale(1.05); }
+  .project-card:hover .project-image img { transform: scale(1.03); }
 
   .project-image::after {
     content: '';
@@ -780,7 +874,15 @@
     border: 1px solid var(--border);
   }
 
-  .project-link.secondary:hover {
+  .project-link:disabled, .project-link.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    background: transparent;
+    border: 1px solid var(--border);
+    color: var(--text-muted);
+  }
+
+  .project-link.secondary:not(:disabled):hover {
     background: rgba(255, 255, 255, 0.1);
     border-color: var(--border-hover);
   }
@@ -967,6 +1069,24 @@
   textarea.form-control { resize: vertical; min-height: 120px; }
 
   .btn-submit { width: 100%; justify-content: center; }
+
+  .input-error {
+    border-color: #ef4444 !important;
+  }
+  .input-success {
+    border-color: var(--primary) !important;
+  }
+  .contact-success-msg {
+    display: none;
+    color: #22c55e;
+    background: rgba(34, 197, 94, 0.1);
+    border: 1px solid rgba(34, 197, 94, 0.2);
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    text-align: center;
+  }
 
   /* FOOTER */
   footer {

@@ -3,11 +3,37 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Ramsés Baltodano — Full Stack Developer | RAMSES DEVS</title>
-<meta name="description" content="Professional portfolio of Ramsés Baltodano, Full Stack Developer specialized in modern web applications, enterprise systems, and clean code." />
+<title>Ramsés Baltodano | Full Stack Developer</title>
+<meta name="description" content="Full Stack Developer specialized in Java, Spring Boot and modern web development. Explore my portfolio, projects and professional work." />
+<meta name="keywords" content="Full Stack Developer, Java Developer, Spring Boot, Portfolio, Software Engineer, Web Developer, Frontend, Backend, GitHub" />
+
+<!-- Canonical URL -->
+<link rel="canonical" href="https://ramsesdevs.github.io/portfolio/" />
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://ramsesdevs.github.io/portfolio/" />
+<meta property="og:title" content="Ramsés Baltodano | Full Stack Developer" />
+<meta property="og:description" content="Full Stack Developer specialized in Java, Spring Boot and modern web development. Explore my portfolio, projects and professional work." />
+<meta property="og:image" content="https://ramsesdevs.github.io/portfolio/assets/devflow.png" />
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content="https://ramsesdevs.github.io/portfolio/" />
+<meta property="twitter:title" content="Ramsés Baltodano | Full Stack Developer" />
+<meta property="twitter:description" content="Full Stack Developer specialized in Java, Spring Boot and modern web development. Explore my portfolio, projects and professional work." />
+<meta property="twitter:image" content="https://ramsesdevs.github.io/portfolio/assets/devflow.png" />
+
+<!-- Theme Color -->
+<meta name="theme-color" content="#0B1220" />
+
+<!-- Favicon -->
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+
 <link rel="preconnect" href="https://cdn.fontsource.org" />
 <link href="https://cdn.jsdelivr.net/fontsource/css/inter@latest/inter.css" rel="stylesheet" />
-<script src="https://unpkg.com/lucide@latest"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+<script src="https://unpkg.com/lucide@latest" defer></script>
 <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
@@ -15,7 +41,7 @@
 <!-- NAVBAR -->
 <nav class="navbar" id="navbar">
   <div class="nav-inner">
-    <div class="logo">
+    <div class="logo hero-animate" style="--delay: 0s">
       <svg class="logo-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="28" height="28">
         <defs>
           <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -46,21 +72,28 @@
 <section class="hero" id="home">
   <div class="container">
     <div class="hero-content">
-      <div class="hero-badge">Available for new projects</div>
-      <h1>
+      <div class="hero-badge hero-animate" style="--delay: 0.1s">Available for new projects</div>
+      <h1 class="hero-animate" style="--delay: 0.2s">
         RAMSÉS<br />
         <span class="gradient">BALTODANO</span>
       </h1>
-      <p class="hero-subtitle">Full Stack Developer</p>
-      <p class="hero-desc">Building modern software with clean code and thoughtful design.</p>
-      <div class="hero-buttons">
-        <a href="#projects" class="btn btn-primary">
+      <p class="hero-subtitle hero-animate" style="--delay: 0.3s">Full Stack Developer</p>
+      <p class="hero-desc hero-animate" style="--delay: 0.4s">Building modern software with clean code and thoughtful design.</p>
+      <p class="hero-availability hero-animate" style="--delay: 0.5s">
+        <span class="pulse-dot"></span> Available for Freelance & Full-Time Opportunities
+      </p>
+      <div class="hero-buttons hero-animate" style="--delay: 0.6s">
+        <a href="#projects" class="btn btn-primary" aria-label="View Projects">
           View Projects
           <i data-lucide="arrow-right" width="16" height="16"></i>
         </a>
-        <a href="#contact" class="btn btn-secondary">
+        <a href="#contact" class="btn btn-secondary" aria-label="Contact Me">
           Contact Me
           <i data-lucide="mail" width="16" height="16"></i>
+        </a>
+        <a href="assets/Ramses_Baltodano_CV.pdf" download class="btn btn-secondary btn-cv" aria-label="Download CV">
+          Download CV
+          <i data-lucide="download" width="16" height="16"></i>
         </a>
       </div>
       <div class="hero-social-links">
@@ -181,6 +214,30 @@
   </div>
 </section>
 
+<!-- TECH STACK -->
+<section id="tech-stack" style="background: rgba(15, 23, 42, 0.4); padding-top: 40px; padding-bottom: 80px;">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label">Tech Stack</span>
+      <h2 class="section-title">Official Technologies</h2>
+      <p class="section-subtitle">Core technologies and tools I use on a daily basis.</p>
+    </div>
+    <div class="tech-stack-grid reveal">
+      <div class="tech-icon-box" aria-label="HTML5" data-tooltip="HTML5"><i class="devicon-html5-plain colored"></i></div>
+      <div class="tech-icon-box" aria-label="CSS3" data-tooltip="CSS3"><i class="devicon-css3-plain colored"></i></div>
+      <div class="tech-icon-box" aria-label="JavaScript" data-tooltip="JavaScript"><i class="devicon-javascript-plain colored"></i></div>
+      <div class="tech-icon-box" aria-label="Java" data-tooltip="Java"><i class="devicon-java-plain colored"></i></div>
+      <div class="tech-icon-box" aria-label="Spring Boot" data-tooltip="Spring Boot"><i class="devicon-spring-original colored"></i></div>
+      <div class="tech-icon-box" aria-label="PostgreSQL" data-tooltip="PostgreSQL"><i class="devicon-postgresql-plain colored"></i></div>
+      <div class="tech-icon-box" aria-label="MySQL" data-tooltip="MySQL"><i class="devicon-mysql-plain colored"></i></div>
+      <div class="tech-icon-box" aria-label="Git" data-tooltip="Git"><i class="devicon-git-plain colored"></i></div>
+      <div class="tech-icon-box" aria-label="GitHub" data-tooltip="GitHub"><i class="devicon-github-original colored"></i></div>
+      <div class="tech-icon-box" aria-label="Docker" data-tooltip="Docker"><i class="devicon-docker-plain colored"></i></div>
+      <div class="tech-icon-box" aria-label="VS Code" data-tooltip="VS Code"><i class="devicon-vscode-plain colored"></i></div>
+    </div>
+  </div>
+</section>
+
 <!-- SKILLS -->
 <section id="skills">
   <div class="container">
@@ -256,7 +313,8 @@
             <span class="tech-tag">PostgreSQL</span>
           </div>
           <div class="project-links">
-            <a href="https://github.com/ramsesdevs/NexusCRM" target="_blank" rel="noopener noreferrer" class="project-link secondary"><i data-lucide="github" width="14" height="14"></i>GitHub</a>
+            <a href="https://github.com/ramsesdevs/NexusCRM" target="_blank" rel="noopener noreferrer" class="project-link secondary" aria-label="View Repository"><i data-lucide="github" width="14" height="14"></i>View Repository &rarr;</a>
+            <button class="project-link secondary" disabled aria-label="Coming Soon">Coming Soon</button>
           </div>
         </div>
       </div>
@@ -274,7 +332,8 @@
             <span class="tech-tag">JavaScript</span>
           </div>
           <div class="project-links">
-            <a href="https://github.com/ramsesdevs/DevFlow" target="_blank" rel="noopener noreferrer" class="project-link secondary"><i data-lucide="github" width="14" height="14"></i>GitHub</a>
+            <a href="https://github.com/ramsesdevs/DevFlow" target="_blank" rel="noopener noreferrer" class="project-link secondary" aria-label="View Repository"><i data-lucide="github" width="14" height="14"></i>View Repository &rarr;</a>
+            <a href="#" target="_blank" rel="noopener noreferrer" class="project-link primary" aria-label="Live Demo"><i data-lucide="external-link" width="14" height="14"></i>Live Demo</a>
           </div>
         </div>
       </div>
@@ -292,7 +351,8 @@
             <span class="tech-tag">Database</span>
           </div>
           <div class="project-links">
-            <a href="https://github.com/ramsesdevs/POS-System" target="_blank" rel="noopener noreferrer" class="project-link secondary"><i data-lucide="github" width="14" height="14"></i>GitHub</a>
+            <a href="https://github.com/ramsesdevs/POS-System" target="_blank" rel="noopener noreferrer" class="project-link secondary" aria-label="View Repository"><i data-lucide="github" width="14" height="14"></i>View Repository &rarr;</a>
+            <button class="project-link secondary" disabled aria-label="Coming Soon">Coming Soon</button>
           </div>
         </div>
       </div>
@@ -310,7 +370,8 @@
             <span class="tech-tag">JavaScript</span>
           </div>
           <div class="project-links">
-            <a href="https://github.com/ramsesdevs/Restaurant-Landing" target="_blank" rel="noopener noreferrer" class="project-link secondary"><i data-lucide="github" width="14" height="14"></i>GitHub</a>
+            <a href="https://github.com/ramsesdevs/Restaurant-Landing" target="_blank" rel="noopener noreferrer" class="project-link secondary" aria-label="View Repository"><i data-lucide="github" width="14" height="14"></i>View Repository &rarr;</a>
+            <a href="#" target="_blank" rel="noopener noreferrer" class="project-link primary" aria-label="Live Demo"><i data-lucide="external-link" width="14" height="14"></i>Live Demo</a>
           </div>
         </div>
       </div>
@@ -328,7 +389,8 @@
             <span class="tech-tag">JavaScript</span>
           </div>
           <div class="project-links">
-            <a href="https://github.com/ramsesdevs/Andy-Barber" target="_blank" rel="noopener noreferrer" class="project-link secondary"><i data-lucide="github" width="14" height="14"></i>GitHub</a>
+            <a href="https://github.com/ramsesdevs/Andy-Barber" target="_blank" rel="noopener noreferrer" class="project-link secondary" aria-label="View Repository"><i data-lucide="github" width="14" height="14"></i>View Repository &rarr;</a>
+            <a href="#" target="_blank" rel="noopener noreferrer" class="project-link primary" aria-label="Live Demo"><i data-lucide="external-link" width="14" height="14"></i>Live Demo</a>
           </div>
         </div>
       </div>
@@ -480,6 +542,7 @@
           <label for="message">Message</label>
           <textarea id="message" name="message" class="form-control" placeholder="Tell me about your project..." required></textarea>
         </div>
+        <div class="contact-success-msg" id="contactSuccess">Message sent successfully.</div>
         <button type="submit" class="btn btn-primary btn-submit">
           Send Message
           <i data-lucide="send" width="16" height="16"></i>
@@ -510,13 +573,16 @@
         <span>Full Stack Developer</span>
       </div>
       <div class="footer-links">
-        <a href="#">GitHub</a>
-        <a href="#projects">Portfolio</a>
-        <a href="#contact">Contact</a>
-        <a href="#" class="policy-link">Privacy Policy</a>
-        <a href="#" class="policy-link">Terms & Conditions</a>
+        <a href="#home">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="https://github.com/ramsesdevs" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="mailto:ramsesvasdev@gmail.com">Email</a>
+        <a href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a>
       </div>
-      <div class="footer-copy">© 2026 Ramsés Baltodano</div>
+      <div class="footer-copy">
+        <p style="margin-bottom: 8px;">Designed & Developed by Ramsés Baltodano 💙</p>
+        <p>© 2026 Ramsés Baltodano</p>
+      </div>
     </div>
   </div>
 </footer>
