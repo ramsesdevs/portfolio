@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Ramsés Baltodano — Full Stack Developer | RAMSES DEVS</title>
+<meta name="description" content="Professional portfolio of Ramsés Baltodano, Full Stack Developer specialized in modern web applications, enterprise systems, and clean code." />
+<link rel="preconnect" href="https://cdn.fontsource.org" />
+<link href="https://cdn.jsdelivr.net/fontsource/css/inter@latest/inter.css" rel="stylesheet" />
+<script src="https://unpkg.com/lucide@latest"></script>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <div class="logo">
+      <svg class="logo-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="28" height="28">
+        <defs>
+          <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#38bdf8" />
+            <stop offset="100%" stop-color="#818cf8" />
+          </linearGradient>
+        </defs>
+        <polygon points="20,2 38,11 38,29 20,38 2,29 2,11" fill="none" stroke="url(#logoGrad)" stroke-width="2.5" />
+        <path d="M14,28 L14,12 L22,12 C25,12 26,14 26,16 C26,18 25,20 22,20 L14,20 M20,20 L26,28" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+      <span class="logo-text">RAMSES DEVS</span>
+    </div>
+    <ul class="nav-menu" id="navMenu">
+      <li><a href="#home" class="nav-link">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#services" class="nav-link">Services</a></li>
+      <li><a href="#contact" class="nav-link nav-cta">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <i data-lucide="menu" width="24" height="24"></i>
+    </button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-badge">Available for new projects</div>
+      <h1>
+        RAMSÉS<br />
+        <span class="gradient">BALTODANO</span>
+      </h1>
+      <p class="hero-subtitle">Full Stack Developer</p>
+      <p class="hero-desc">Building modern software with clean code and thoughtful design.</p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn btn-primary">
+          View Projects
+          <i data-lucide="arrow-right" width="16" height="16"></i>
+        </a>
+        <a href="#contact" class="btn btn-secondary">
+          Contact Me
+          <i data-lucide="mail" width="16" height="16"></i>
+        </a>
+      </div>
+      <div class="hero-social-links">
+        <a href="https://github.com/ramsesdevs" target="_blank" class="social-icon-btn"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg></a>
+        <a href="mailto:ramsesvasdev@gmail.com" class="social-icon-btn"><i data-lucide="mail" width="20" height="20"></i></a>
+        <a href="https://linkedin.com" target="_blank" class="social-icon-btn"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg></a>
+      </div>
+    </div>
+
+    <div class="hero-filler">
+      <div class="hero-glow"></div>
+      <div class="tech-core">
+        <div class="core-center">
+          <i data-lucide="cpu" width="48" height="48"></i>
+        </div>
+        
+        <div class="floating-node node-1">
+          <i data-lucide="code-2" width="24" height="24"></i>
+        </div>
+        <div class="floating-node node-2">
+          <i data-lucide="database" width="24" height="24"></i>
+        </div>
+        <div class="floating-node node-3">
+          <i data-lucide="layout" width="24" height="24"></i>
+        </div>
+        <div class="floating-node node-4">
+          <i data-lucide="smartphone" width="24" height="24"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      
+      <div class="cmd-window window-1">
+        <div class="cmd-header">
+          <span>C:\WINDOWS\system32\cmd.exe</span>
+          <div class="cmd-header-controls"><span></span><span></span><span></span></div>
+        </div>
+        <div class="cmd-content">
+          <span class="cmd-line">C:\Users\Ramses&gt; node start.js</span>
+          <span class="cmd-line text-white">Starting development server...</span>
+          <span class="cmd-line text-white">Compiled successfully!</span>
+        </div>
+      </div>
+
+      <div class="cmd-window window-2">
+        <div class="cmd-header">
+          <span>C:\WINDOWS\system32\cmd.exe</span>
+          <div class="cmd-header-controls"><span></span><span></span><span></span></div>
+        </div>
+        <div class="cmd-content">
+          <span class="cmd-line">C:\Users\Ramses&gt; ping github.com</span>
+          <span class="cmd-line text-white">Reply from 140.82.113.3: bytes=32 time=14ms</span>
+          <span class="cmd-line text-white">Reply from 140.82.113.3: bytes=32 time=15ms</span>
+        </div>
+      </div>
+
+      <div class="cmd-window window-3">
+        <div class="cmd-header">
+          <span>C:\WINDOWS\system32\cmd.exe</span>
+          <div class="cmd-header-controls"><span></span><span></span><span></span></div>
+        </div>
+        <div class="cmd-content">
+          <span class="cmd-line">C:\Users\Ramses&gt; whoami</span>
+          <span class="cmd-line text-white">Antigravity AI (System Optimizer)</span>
+          <span class="cmd-line text-white">Footprint left. System at peak efficiency.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label">About Me</span>
+      <h2 class="section-title">Get to know me</h2>
+      <p class="section-subtitle">A passionate developer focused on building modern digital experiences.</p>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <h3>Full Stack Developer from Nicaragua</h3>
+        <p>I'm a developer passionate about building modern web applications, enterprise systems, and intuitive digital experiences. I focus on clean architecture, thoughtful design, and writing code that scales.</p>
+        <p>My work spans across frontend interfaces, backend APIs, and database design — always with an engineering mindset and attention to detail.</p>
+
+        <div class="about-highlights">
+          <div class="highlight-item"><i data-lucide="check-circle" width="18" height="18"></i><span>Modern Web Development</span></div>
+          <div class="highlight-item"><i data-lucide="check-circle" width="18" height="18"></i><span>Enterprise Systems</span></div>
+          <div class="highlight-item"><i data-lucide="check-circle" width="18" height="18"></i><span>Clean Architecture</span></div>
+          <div class="highlight-item"><i data-lucide="check-circle" width="18" height="18"></i><span>Digital Experiences</span></div>
+        </div>
+      </div>
+
+      <div class="info-card reveal">
+        <div class="info-row">
+          <span class="info-label">Name</span>
+          <span class="info-value">Ramsés Baltodano</span>
+        </div>
+        <div class="info-row">
+          <span class="info-label">Role</span>
+          <span class="info-value"><i data-lucide="code-2" width="16" height="16"></i>Full Stack Developer</span>
+        </div>
+        <div class="info-row">
+          <span class="info-label">Location</span>
+          <span class="info-value"><i data-lucide="map-pin" width="16" height="16"></i>Nicaragua</span>
+        </div>
+        <div class="info-row">
+          <span class="info-label">Status</span>
+          <span class="info-value" style="color: #86EFAC;">
+            <span style="width:8px;height:8px;background:#86EFAC;border-radius:50%;display:inline-block;"></span>
+            Available
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label">Skills</span>
+      <h2 class="section-title">Technologies I work with</h2>
+      <p class="section-subtitle">A curated stack of tools and technologies I use to build modern software.</p>
+    </div>
+
+    <div class="skills-grid">
+      <div class="skill-category reveal">
+        <div class="skill-icon"><i data-lucide="layout" width="24" height="24"></i></div>
+        <h3>Frontend</h3>
+        <ul class="skill-list">
+          <li><i data-lucide="chevron-right" width="16" height="16"></i>HTML5</li>
+          <li><i data-lucide="chevron-right" width="16" height="16"></i>CSS3</li>
+          <li><i data-lucide="chevron-right" width="16" height="16"></i>JavaScript</li>
+        </ul>
+      </div>
+
+      <div class="skill-category reveal">
+        <div class="skill-icon"><i data-lucide="server" width="24" height="24"></i></div>
+        <h3>Backend</h3>
+        <ul class="skill-list">
+          <li><i data-lucide="chevron-right" width="16" height="16"></i>Java</li>
+          <li><i data-lucide="chevron-right" width="16" height="16"></i>Spring Boot</li>
+          <li><i data-lucide="chevron-right" width="16" height="16"></i>REST APIs</li>
+        </ul>
+      </div>
+
+      <div class="skill-category reveal">
+        <div class="skill-icon"><i data-lucide="database" width="24" height="24"></i></div>
+        <h3>Database</h3>
+        <ul class="skill-list">
+          <li><i data-lucide="chevron-right" width="16" height="16"></i>PostgreSQL</li>
+          <li><i data-lucide="chevron-right" width="16" height="16"></i>MySQL</li>
+        </ul>
+      </div>
+
+      <div class="skill-category reveal">
+        <div class="skill-icon"><i data-lucide="wrench" width="24" height="24"></i></div>
+        <h3>Tools</h3>
+        <ul class="skill-list">
+          <li><i data-lucide="chevron-right" width="16" height="16"></i>Git</li>
+          <li><i data-lucide="chevron-right" width="16" height="16"></i>GitHub</li>
+          <li><i data-lucide="chevron-right" width="16" height="16"></i>Docker</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label">Projects</span>
+      <h2 class="section-title">Featured Projects</h2>
+      <p class="section-subtitle">A selection of work that showcases my approach to building digital products.</p>
+    </div>
+
+    <div class="projects-grid">
+      <div class="project-card reveal">
+        <div class="project-image">
+          <img src="assets/nexuscrm.png" alt="NexusCRM" />
+        </div>
+        <div class="project-body">
+          <h3>NexusCRM</h3>
+          <p>Enterprise CRM platform designed for client management and business operations.</p>
+          <div class="project-tech">
+            <span class="tech-tag">Java</span>
+            <span class="tech-tag">Spring Boot</span>
+            <span class="tech-tag">PostgreSQL</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/ramsesdevs/NexusCRM" target="_blank" rel="noopener noreferrer" class="project-link secondary"><i data-lucide="github" width="14" height="14"></i>GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-image">
+          <img src="assets/devflow.png" alt="DevFlow" />
+        </div>
+        <div class="project-body">
+          <h3>DevFlow</h3>
+          <p>Modern SaaS-inspired project management dashboard.</p>
+          <div class="project-tech">
+            <span class="tech-tag">HTML</span>
+            <span class="tech-tag">CSS</span>
+            <span class="tech-tag">JavaScript</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/ramsesdevs/DevFlow" target="_blank" rel="noopener noreferrer" class="project-link secondary"><i data-lucide="github" width="14" height="14"></i>GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-image">
+          <img src="assets/pos-system.png" alt="POS System" />
+        </div>
+        <div class="project-body">
+          <h3>POS System - Doña Fany</h3>
+          <p>Custom Point of Sale and management system for a local restaurant and cocktail bar.</p>
+          <div class="project-tech">
+            <span class="tech-tag">Java</span>
+            <span class="tech-tag">Spring Boot</span>
+            <span class="tech-tag">Database</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/ramsesdevs/POS-System" target="_blank" rel="noopener noreferrer" class="project-link secondary"><i data-lucide="github" width="14" height="14"></i>GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-image">
+          <img src="assets/restaurant.png" alt="Restaurant Landing" />
+        </div>
+        <div class="project-body">
+          <h3>Sabor Nica Landing</h3>
+          <p>Modern responsive website for a local restaurant featuring a gallery and reservation system.</p>
+          <div class="project-tech">
+            <span class="tech-tag">HTML</span>
+            <span class="tech-tag">CSS</span>
+            <span class="tech-tag">JavaScript</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/ramsesdevs/Restaurant-Landing" target="_blank" rel="noopener noreferrer" class="project-link secondary"><i data-lucide="github" width="14" height="14"></i>GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-image">
+          <img src="assets/andybarber.png" alt="Andy Barber" />
+        </div>
+        <div class="project-body">
+          <h3>Andy Barber</h3>
+          <p>Professional business website for a modern barbershop.</p>
+          <div class="project-tech">
+            <span class="tech-tag">HTML</span>
+            <span class="tech-tag">CSS</span>
+            <span class="tech-tag">JavaScript</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/ramsesdevs/Andy-Barber" target="_blank" rel="noopener noreferrer" class="project-link secondary"><i data-lucide="github" width="14" height="14"></i>GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label">Services</span>
+      <h2 class="section-title">What I can do for you</h2>
+      <p class="section-subtitle">End-to-end development services tailored to your business needs.</p>
+    </div>
+
+    <div class="services-grid">
+      <div class="service-card reveal">
+        <div class="service-number">01</div>
+        <div class="service-icon"><i data-lucide="globe" width="24" height="24"></i></div>
+        <h3>Web Development</h3>
+        <p>Creation of modern, fast, and responsive websites tailored to your brand.</p>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-number">02</div>
+        <div class="service-icon"><i data-lucide="server" width="24" height="24"></i></div>
+        <h3>Backend Development</h3>
+        <p>Development of APIs and enterprise systems with clean architecture.</p>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-number">03</div>
+        <div class="service-icon"><i data-lucide="palette" width="24" height="24"></i></div>
+        <h3>UI Implementation</h3>
+        <p>Converting designs into functional, pixel-perfect interfaces.</p>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-number">04</div>
+        <div class="service-icon"><i data-lucide="zap" width="24" height="24"></i></div>
+        <h3>Website Optimization</h3>
+        <p>Performance improvements and enhanced user experience.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label">My Process</span>
+      <h2 class="section-title">How I work</h2>
+      <p class="section-subtitle">A structured methodology to deliver quality products on time.</p>
+    </div>
+
+    <div class="process-grid">
+      <div class="process-step reveal">
+        <div class="process-num">01</div>
+        <h3>Planning</h3>
+        <p>Analyze needs and define clear objectives for the project.</p>
+      </div>
+
+      <div class="process-step reveal">
+        <div class="process-num">02</div>
+        <h3>Design</h3>
+        <p>Create modern, intuitive interfaces focused on user experience.</p>
+      </div>
+
+      <div class="process-step reveal">
+        <div class="process-num">03</div>
+        <h3>Development</h3>
+        <p>Build functional solutions with clean, maintainable code.</p>
+      </div>
+
+      <div class="process-step reveal">
+        <div class="process-num">04</div>
+        <h3>Deployment</h3>
+        <p>Publish and deliver the final product ready for production.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label">Contact</span>
+      <h2 class="section-title">Let's Work Together</h2>
+      <p class="section-subtitle">Have a project in mind? Let's build something great together.</p>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <h3>Get in touch</h3>
+        <p>Feel free to reach out through any of the channels below. I'm always open to discussing new projects and opportunities.</p>
+
+        <div class="contact-links">
+          <a href="mailto:ramsesvasdev@gmail.com" class="contact-link">
+            <div class="contact-link-icon"><i data-lucide="mail" width="18" height="18"></i></div>
+            <div class="contact-link-text">
+              <div class="contact-link-label">Email</div>
+              <div class="contact-link-value">ramsesvasdev@gmail.com</div>
+            </div>
+            <i data-lucide="arrow-up-right" width="16" height="16"></i>
+          </a>
+
+          <a href="https://github.com/ramsesdevs" target="_blank" rel="noopener noreferrer" class="contact-link">
+            <div class="contact-link-icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg></div>
+            <div class="contact-link-text">
+              <div class="contact-link-label">GitHub</div>
+              <div class="contact-link-value">@ramsesdevs</div>
+            </div>
+            <i data-lucide="arrow-up-right" width="16" height="16"></i>
+          </a>
+
+          <a href="#" class="contact-link">
+            <div class="contact-link-icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg></div>
+            <div class="contact-link-text">
+              <div class="contact-link-label">LinkedIn</div>
+              <div class="contact-link-value">Ramsés Baltodano</div>
+            </div>
+            <i data-lucide="arrow-up-right" width="16" height="16"></i>
+          </a>
+
+          <a href="#" class="contact-link">
+            <div class="contact-link-icon"><i data-lucide="briefcase" width="18" height="18"></i></div>
+            <div class="contact-link-text">
+              <div class="contact-link-label">Fiverr</div>
+              <div class="contact-link-value">ramsesdevs</div>
+            </div>
+            <i data-lucide="arrow-up-right" width="16" height="16"></i>
+          </a>
+        </div>
+      </div>
+
+      <form class="contact-form reveal" onsubmit="handleSubmit(event)">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" class="form-control" placeholder="Your name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" class="form-control" placeholder="your@email.com" required />
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" class="form-control" placeholder="Tell me about your project..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-submit">
+          Send Message
+          <i data-lucide="send" width="16" height="16"></i>
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="logo">
+          <svg class="logo-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="24" height="24">
+            <defs>
+              <linearGradient id="logoGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#38bdf8" />
+                <stop offset="100%" stop-color="#818cf8" />
+              </linearGradient>
+            </defs>
+            <polygon points="20,2 38,11 38,29 20,38 2,29 2,11" fill="none" stroke="url(#logoGrad2)" stroke-width="2.5" />
+            <path d="M14,28 L14,12 L22,12 C25,12 26,14 26,16 C26,18 25,20 22,20 L14,20 M20,20 L26,28" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          <span class="logo-text">RAMSES DEVS</span>
+        </div>
+        <span>Full Stack Developer</span>
+      </div>
+      <div class="footer-links">
+        <a href="#">GitHub</a>
+        <a href="#projects">Portfolio</a>
+        <a href="#contact">Contact</a>
+        <a href="#" class="policy-link">Privacy Policy</a>
+        <a href="#" class="policy-link">Terms & Conditions</a>
+      </div>
+      <div class="footer-copy">© 2026 Ramsés Baltodano</div>
+    </div>
+  </div>
+</footer>
+
+<!-- INTERACTIVE MODAL -->
+<div class="interactive-modal" id="infoModal">
+  <div class="modal-overlay" id="modalOverlay"></div>
+  <div class="modal-content-box">
+    <button class="modal-close" id="modalClose"><i data-lucide="x" width="24" height="24"></i></button>
+    <img id="modalImage" class="modal-image" style="display:none;" />
+    <div class="modal-header">
+      <div class="modal-icon" id="modalIcon"></div>
+      <h3 id="modalTitle">Title</h3>
+    </div>
+    <div class="modal-body" id="modalBody">
+      Content goes here
+    </div>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
