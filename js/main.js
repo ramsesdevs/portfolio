@@ -9,6 +9,24 @@ window.addEventListener('scroll', () => {
   }
 });
 
+// CV Dropdown Logic
+const cvDropdownBtn = document.getElementById('cvDropdownBtn');
+const cvDropdownMenu = document.getElementById('cvDropdownMenu');
+if (cvDropdownBtn && cvDropdownMenu) {
+  cvDropdownBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    const isActive = cvDropdownMenu.classList.contains('active');
+    cvDropdownMenu.classList.toggle('active');
+    cvDropdownBtn.setAttribute('aria-expanded', !isActive);
+  });
+  document.addEventListener('click', (e) => {
+    if (!cvDropdownBtn.contains(e.target) && !cvDropdownMenu.contains(e.target)) {
+      cvDropdownMenu.classList.remove('active');
+      cvDropdownBtn.setAttribute('aria-expanded', 'false');
+    }
+  });
+}
+
 const hamburger = document.getElementById('hamburger');
 const navMenu = document.getElementById('navMenu');
 
